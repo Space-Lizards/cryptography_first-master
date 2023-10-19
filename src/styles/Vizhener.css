@@ -1,0 +1,64 @@
+/* Vigenere.css */
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto; /* Чтобы центрировать контейнер */
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #333;
+	text-align: center;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.input-container input {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.button-container button {
+	width: 150px;
+	padding: 10px;
+	margin: 0 10px;
+	background-color: #007aff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+	background-color: #0056b3;
+}
+
+#outputText {
+	width: 95%;
+	margin-top: 20px;
+	font-size: 18px;
+	color: #333;
+}

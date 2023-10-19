@@ -1,0 +1,51 @@
+/* src/styles/Navigation.css */
+.upper-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #007aff;
+	padding: 10px 20px;
+	z-index: 1000; /* Устанавливаем z-index, чтобы навигация была поверх остального содержимого */
+}
+
+/* src/styles/Navigation.css */
+.nav-button {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 5px 10px; /* Область вокруг текста кнопки */
+	margin: 0 10px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	outline: none;
+	display: inline-block; /* Добавим display: inline-block; чтобы кнопки не прокладывали перенос строки */
+	position: relative; /* Добавим относительное позиционирование для создания псевдоэлемента */
+}
+
+/* Добавим псевдоэлемент для создания подчеркивания при наведении */
+.nav-button::before {
+	content: ''; /* Создаем пустой псевдоэлемент */
+	position: absolute; /* Абсолютное позиционирование относительно родительской кнопки */
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #1f1f1f; /* Цвет подчеркивания */
+	height: 2px; /* Толщина подчеркивания */
+	transform: scaleX(
+		0
+	); /* Начальное значение ширины подчеркивания (нулевая ширина) */
+	transform-origin: center; /* Центрирование ширины подчеркивания */
+	transition: transform 0.3s ease; /* Плавное изменение ширины при наведении */
+}
+
+.nav-button:hover::before {
+	transform: scaleX(
+		1
+	); /* Увеличиваем ширину подчеркивания до 100% при наведении */
+}
