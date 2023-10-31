@@ -1,4 +1,4 @@
-# This Caesar Vizhener Polibyan and Gronsfeld crypto :)
+# This Caesar Vizhener Polibyan and Vigenere crypto :)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
